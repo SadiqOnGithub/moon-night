@@ -13,6 +13,18 @@ body {
   min-height: 1500px;
 }
 
+.disclaimer {   
+  display: none;
+  width: 95%;
+  text-align: center;
+  margin-inline: auto;
+  font-size: 0.75rem;
+  padding: 0.5em;
+  border: 4px solid hsl(120, 100%, 50%);
+  margin-top: 3em;
+  color: #fff;
+}
+
 section {
   position: relative;
   width: 100%;
@@ -62,7 +74,8 @@ section img {
 #text {
   position: relative;
   color: #fff;
-  font-size: 10rem;
+  font-size: 11vw;
+  text-align: center;
   z-index: 1;
 }
 
@@ -90,5 +103,20 @@ section img {
   font-size: 1.2rem;
   text-align: justify;
   color: hsl(0, 0%, 95%);
-  margin-bottom: .7em;
+  margin-bottom: 0.7em;
+}
+
+@media (max-width: 1400px) {
+  #moon {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    display: none;
+  }
+  .disclaimer {
+    display: block;
+  }
 }
